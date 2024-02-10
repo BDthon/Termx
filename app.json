@@ -1,0 +1,42 @@
+{
+  "name": "sᴛʀɪɴɢ sᴇssɪᴏɴ ɢᴇɴᴇʀᴀᴛᴏʀ",
+  "description": "A Telegram Bot to generate Telethon and Pyrogram String Sessions.",
+  "logo": "https://telegra.ph/file/9f31b3a61c4897b297a33.jpg",
+  "keywords": [
+    "telegram",
+    "bot",
+    "python",
+    "pyrogram"
+  ],
+    "env": {
+        "BOT_TOKEN": {
+            "description": "حط توكن بوتك تحصله من @BotFather",
+            "required": true
+        },  
+        "MUST_JOIN": {
+            "description": "يوزر القناه التي تريد وضعه للاشتراك اجباري بدون @",
+            "required": true      
+        }, 
+        "MONGO_URL": {
+            "description": "مونجو ديسيبل",
+            "required": true
+        },
+        "API_ID": {
+            "description": "الايبي ايدي",
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "ايدي حساب المالك",
+            "required": true
+        }, 
+        "API_HASH": {
+            "description": "الايبي هاش",
+            "required": true
+        }
+    },
+    "addons": [
+        {
+            "plan": "heroku-postgresql"
+        }
+    ]
+}
